@@ -16,6 +16,10 @@ Here's a step-by-step guide for the entire process in Python:
 4. Send a test image to the API using Postman:
 5. Create a new POST request.
 
+Hedars should have 'Content-Type' -> 'application/octet-stream'
+Body (raw) - { 'image': 'base64string' }
+
+
 The image data will be passed to the Lambda function, which will pass it to AWS Rekognition for analysis. The results of the analysis will be returned in the response.
 
 # Questions
